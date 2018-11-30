@@ -19,7 +19,7 @@ body, html {
 .bg {
     background-image: url("../images/home/Type-A.jpg");
     height: 100%; 
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -639,4 +639,18 @@ body, html {
     background-color: #8a756e !important;
     border-color: #8a756e !important;
     padding: .375rem 1.75rem !important;
+}
+.form-control:focus {
+    color: #222;
+    background-color: #fff;
+    border-color: #a1887f !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+.btn:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+.btn-primary:focus {
+    box-shadow: none !important;
 }
