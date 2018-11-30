@@ -1,70 +1,95 @@
 
-/* Hidden only on xs */
 
 
-/* Hidden only on sm */
-@media (min-width: 576px) {
-    .d-sm-none {
-      display: none !important;
-    }
-    .d-sm-inline {
-      display: inline !important;
-    }
-    .d-sm-inline-block {
-      display: inline-block !important;
-    }
-    .d-sm-block {
-      display: block !important;
-    }
-    .d-sm-table {
-      display: table !important;
-    }
-    .d-sm-table-row {
-      display: table-row !important;
-    }
-    .d-sm-table-cell {
-      display: table-cell !important;
-    }
-    .d-sm-flex {
-      display: -ms-flexbox !important;
-      display: flex !important;
-    }
-    .d-sm-inline-flex {
-      display: -ms-inline-flexbox !important;
-      display: inline-flex !important;
-    }
-  }
+@media (min-width: 2722px) {
+  .side-bg {width: 44%;}
+}
+@media (min-width: 2418px) and (max-width: 2721px) {
+  .side-bg {width: 46%;}
+  .side-title-bg {right: -2.5%;}
+}
+@media (min-width: 2198px) and (max-width: 2417px) {
+  .side-bg {width: 47%;}
+}
+@media (min-width: 2065px) and (max-width: 2197px) {
+  .side-bg {width: 49%;}
+}
+@media (min-width: 1838px) and (max-width: 2064px) {
+  .side-bg {width: 57%;}
+  .side-title-bg {right: -3%;}
+}
+@media (min-width: 1586px) and (max-width: 1837px) {
+  .side-bg {width: 54%;}
+}
+@media (min-width: 1464px) and (max-width: 1585px) {
+  .side-bg {width: 56%;}
+}
+@media (min-width: 1327px) and (max-width: 1463px) {
+  .side-bg {width: 59%;}
+}
+@media (min-width: 1241px) and (max-width: 1326px) {
+  .side-bg {width: 60%;}
+}
 
-  /* Hidden only on md */
-  @media (min-width: 768px) {
-    .d-md-none {
-      display: none !important;
-    }
-    .d-md-inline {
-      display: inline !important;
-    }
-    .d-md-inline-block {
-      display: inline-block !important;
-    }
-    .d-md-block {
-      display: block !important;
-    }
-    .d-md-table {
-      display: table !important;
-    }
-    .d-md-table-row {
-      display: table-row !important;
-    }
-    .d-md-table-cell {
-      display: table-cell !important;
-    }
-    .d-md-flex {
-      display: -ms-flexbox !important;
-      display: flex !important;
-    }
-    .d-md-inline-flex {
-      display: -ms-inline-flexbox !important;
-      display: inline-flex !important;
-    }
-  }
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
 
+@media (min-width: 1281px) {
+  
+  
+}
+@media (max-width: 1240px) {
+  .side{display: none}
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  
+}
