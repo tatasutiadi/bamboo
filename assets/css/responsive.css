@@ -1,63 +1,125 @@
+@media (min-width: 1890px) and (max-width: 2089px) {
+  .logo {width: 300px}
+  #navbar li a {font-size: 24px}
+}
+@media (min-width: 1720px) and (max-width: 1889px) {
+  .logo {width: 300px}
+  #navbar li a {font-size: 20px}
+}
+@media (min-width: 1545px) and (max-width: 1719px) {
+  .logo {
+    width: 250px;
+    margin: 0 1% 0 4%;
+  }
+  #navbar li a {font-size: 18px}
+  .side-bg {
+    width: 53%;
+  }
+  .side-nav {
+    width: 24%;
+  }
+}
+@media (min-width: 1425px) and (max-width: 1544px) {
+  .logo {
+    width: 200px;
+    margin: 1% 1% 0 4%;
+}
+  #navbar li a {font-size: 16px}
+  .mt-min-10 {
+    margin-top: -2px !important;
+  }
+  .side-bg {
+    width: 53%;
+  }
+  .side-nav {
+    width: 24%;
+  }
+}
+@media (min-width: 1290px) and (max-width: 1424px) {
+  .logo {
+    width: 160px;
+    margin: 1% 1% 0 3%;
+}
+  #navbar li a {font-size: 14px}
+  .mt-min-10 {
+    margin-top: -2px !important;
+  }
+  .side-bg {
+    width: 54%;
+  }
+  .side-nav {
+    width: 26%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1289px) {
+  .logo {
+    width: 160px;
+    margin: 1% 1% 0 2%;
+}
+  #navbar li a {font-size: 14px}
+  .mt-min-10 {
+    margin-top: -2px !important;
+  }
+  .side-bg {
+    width: 57%;
+  }
+  .side-nav {
+    width: 30%;
+  }
+  #navbar li a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .logo {
+    width: 160px;
+    margin: 1% 1% 0 2%;
+  }
+  .mt-min-10 {
+    margin-top: -2px !important;
+  }
+  .side-bg {
+    width: 57%;
+  }
+  .side-nav {
+    width: 30%;
+  }
+  #navbar li a {
+    padding-left: 0px;
+    padding-right: 0px;
+    letter-spacing: 0px;
+    margin: 0 7px;
+    font-size: 12px
+  }
+  .side-title-bg {
+    right: -4%;
+    height: 78px;
+    width: 335px;
+    top: 10%;
+  }
+  .side-title {
+    top: -40%;
+    font-size: 24px !important;
+  }
+  .heading-2 {
+    font-size: 28px !important;
+  }
+  .heading-3 {
+    font-size: 20px !important;
+  }
+  .teks {
+    font-size: 12px !important;
+  }
+  .ml-33-5p {
+    margin-left: 30% !important;
+  }
+  .copyright{font-size: 12px;}
+}
 
 
-
-@media (min-width: 2722px) {
-  .side-bg {width: 56%;}
-  .side-title-bg {right: -1%;}
-}
-@media (min-width: 2418px) and (max-width: 2721px) {
-  .side-bg {width: 56%;}
-  .side-title-bg {right: -1.5%;}
-}
-@media (min-width: 2198px) and (max-width: 2417px) {
-  .side-bg {width: 57%;}
-  .side-title-bg {right: -1%;}
-}
-@media (min-width: 2065px) and (max-width: 2197px) {
-  .side-bg {width: 57%;}
-  .side-title-bg {right: -1%;}
-}
-@media (min-width: 1838px) and (max-width: 2064px) {
-  .side-bg {width: 57%;}
-  .side-title-bg {right: -3%;}
-}
-@media (min-width: 1586px) and (max-width: 1837px) {
-  .side-bg {width: 57%;}
-  .side-title-bg {right: -2%;}
-}
-@media (min-width: 1464px) and (max-width: 1585px) {
-  .side-bg {width: 57%;}
-}
-@media (min-width: 1327px) and (max-width: 1463px) {
-  .side-bg {width: 58%;}
-  .side-title-bg {right: -4.5%;}
-}
-@media (min-width: 1241px) and (max-width: 1326px) {
-  .side-bg {width: 57%;}
-  .side-title-bg {right: -4.5%;}
-}
-
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-  
-  
-}
-@media (max-width: 1240px) {
+@media (max-width: 1024px) {
   .side{display: none}
-}
-
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  
-  
 }
 
 /* 
@@ -66,8 +128,24 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
-  
+  .logo {
+    width: 170px;
+    margin: 15px 0 0 0;
+  }
+  #navbar li a {
+    font-size: 12px;
+    padding-left: 0;
+    padding-right: 0;
+    letter-spacing: 0;
+    margin: 0 10px;
+  }
+  #navbar ul {
+    float: right !important;
+    margin-top: 40px !important;
+  }
+  .mt-min-10 {
+    margin-top: -9px !important;
+  }
 }
 
 /* 
@@ -76,7 +154,24 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
+  .logo {
+    width: 170px;
+    margin: 15px 0 0 0;
+  }
+  #navbar li a {
+    font-size: 12px;
+    padding-left: 0;
+    padding-right: 0;
+    letter-spacing: 0;
+    margin: 0 10px;
+  }
+  #navbar ul {
+    float: right !important;
+    margin-top: 40px !important;
+  }
+  .mt-min-10 {
+    margin-top: -9px !important;
+  }
   
 }
 
@@ -86,7 +181,11 @@
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-  
+  .logo {
+    width: 200px;
+    margin: 10px 0 0 20px;
+  }
+  #navbar ul {display: none !important;}
   
 }
 
@@ -96,6 +195,11 @@
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .logo {
+    width: 200px;
+    margin: 10px 0 0 20px;
+  }
+  #navbar ul {display: none !important;}
   
   
 }
