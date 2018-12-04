@@ -464,6 +464,9 @@ body, html {
     --lightblue: #64B5F6; */
     --blue: #037a68;
     --lightblue: #13ab50;
+
+    --blue2: #036455;
+    --lightblue2: #108e43;
     
     --dark-text-color: #222;
     --light-text-color: #777;
@@ -478,10 +481,14 @@ body, html {
   .icon-checkbox {
     display: none;
   }
+  .cat-icon{
+    width: 22px !important;
+    height: 27px !important;
+  }
   .icon {
     position: fixed;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background: #f5f5f5;
     border-radius: 50%;
     bottom: 5%;
@@ -545,15 +552,16 @@ body, html {
 /* ------------------------------------------ */
 .msgr-container {
     position: absolute;
-    bottom: 12%;
+    bottom: 15%;
     right: 2.5%;
-    width: 400px;
-    height: 60%;
+    width: 350px;
+    height: 69%;
     box-shadow: 4px 4px 100px rgba(0,0,0,.2);
     border-radius: 10px;
     overflow: hidden;
     transition: all .3s;
     z-index: 2;
+    min-height: 383px;
   }
   .messenger {
     position: relative;
@@ -588,21 +596,30 @@ body, html {
 
   .hero {
     background: linear-gradient(to bottom right, var(--lightblue), var(--blue));
-    height: 250px;
+    height: 130px;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -100;
   }
+  .hero2 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: #f5f5f5;
+    left: 0;
+    z-index: -101;
+  }
 
   .header {
-    height: 250px;
-    padding: 2em;
+    height: 90px;
+    padding: 20px;
     color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     line-height: 1.5;
     position: relative;
     
@@ -612,7 +629,7 @@ body, html {
     transition: all .6s ease .4s; */
   }
   .header h1 {
-    margin-bottom: .5em;
+    margin: 0 0 10px 0;
     font-size: 1.5em;
     font-weight: lighter;
   }
@@ -620,6 +637,113 @@ body, html {
     font-size: .9em;
     opacity: .8;
   }
+  .card-nup{
+    width: 320px;
+    margin: 0 auto 15px auto;
+    border-radius: 7px !important;
+    box-shadow: 0 2px 15px rgba(0,0,0,.2);
+    background: #f5f5f5;
+  }
+  .nup{
+    opacity: 1 !important;
+    text-align: center !important;
+    
+    padding: 15px 0 10px 0;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    
+  }
+  .data{
+    opacity: 1 !important;
+    text-align: center !important;
+    background: #f5f5f5;
+    padding: 0px 20px 15px 20px;
+    color: #555;
+    line-height: 22px;
+    font-size: 12px;
+    border-radius: 7px;
+  }
+  .form-style{
+    width: 300px;
+    margin: 0 auto;
+  }
+  .form-group {
+    margin-bottom: 7px;
+  }
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 7px;
+    font-size: 13px;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    outline: none;
+}
+.text-muted {
+  color: #aaa!important;
+}
+
+.form-text {
+  display: block;
+  margin-top: 4px;
+}
+.small, small {
+  font-size: 67% !important;
+  font-weight: 400;
+}
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+.btn-primary {
+  color: #fff;
+  background: linear-gradient(to bottom right, var(--lightblue), var(--blue));
+}
+.btn-primary:hover {
+  color: #fff !important;
+  /* background: linear-gradient(to bottom right, var(--lightblue), var(--blue)); */
+  border: 1px solid #aaa !important;
+}
+.btn {
+  display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 5px 18px 6px 15px;
+    width: 100px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    letter-spacing: 0.5px;
+    text-transform: none;
+    outline: none;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+}
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: button;
+}
+button, select {
+  text-transform: none;
+}
+button, input {
+  overflow: visible;
+}
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
   .scrollable section {
     border-top: 2px solid var(--lightblue);
     background: #fff;
@@ -680,13 +804,15 @@ body, html {
     bottom: 0;
     height: 50px;
     width: 100%;
-    background: #fff;
+    background: #f5f5f5;
     box-shadow: 0 -2px 20px rgba(0,0,0,.1);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: .8em;
+    font-size: 10px;
     color: var(--light-text-color);
+    text-align: center;
+    line-height: 13px;
   }
   
   .link_btn {

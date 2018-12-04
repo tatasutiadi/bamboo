@@ -22,7 +22,7 @@
   left: 0;
   width: 100%;
   height: 1px;
-  background: #e1e1e1;
+  /* background: #e1e1e1; */
   z-index: 1;
   opacity: 0;
   transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
