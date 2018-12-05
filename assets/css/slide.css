@@ -90,7 +90,11 @@
   opacity: 1;
 }
 .slideshow .slide .caption {
-  padding: 0 100px;
+  padding: 30px 100px 20px 100px;
+    background: rgb(0,0,0, 0.1);
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 5px #f5f5f5; */
+    text-shadow: 1px 1px 2px #444;
 }
 .slideshow .slide .image-container {
   position: absolute;

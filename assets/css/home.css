@@ -139,10 +139,13 @@ body, html {
 .no-mb {margin-bottom: 0 !important;}
 
 .p-10{padding: 10px !important}
+.p-whatsapp{padding: 10px 30px 10px 10px !important;}
 
 .w-100{width: 100%}
 .h-100{height: 100%}
 .h-100vh{height: 100vh !important}
+
+.w-35{width: 35px}
 
 .txt-center{text-align: center !important}
 
@@ -476,8 +479,28 @@ body, html {
     --font: 'Roboto Mono', sans-serif;
   }
 
+  .book-text{
+    position: fixed;
+    width: 150px;
+    height: 34px;
+    bottom: 40px;
+    right: 150px;
+    display: block;
+    cursor: pointer;
+    z-index: 1;
+    color: #f5f5f5;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px #444;
+    font-family: "opens-regular";
+  }
+  .book-text i {
+    margin-left: 20px;
+    color: #f5f5f5 !important;
+    /* text-shadow: none !important; */
+  }
 /* ICON */
 /* ------------------------------------------ */
+
   .icon-checkbox {
     display: none;
   }
@@ -491,7 +514,7 @@ body, html {
     height: 50px;
     background: #f5f5f5;
     border-radius: 50%;
-    bottom: 5%;
+    bottom: 40px;
     right: 2.5%;
     display: block;
     justify-content: center;
@@ -552,10 +575,11 @@ body, html {
 /* ------------------------------------------ */
 .msgr-container {
     position: absolute;
-    bottom: 15%;
+    bottom: 100px;
     right: 2.5%;
     width: 350px;
-    height: 69%;
+    height: 500px;
+    /* max-height: 500px; */
     box-shadow: 4px 4px 100px rgba(0,0,0,.2);
     border-radius: 10px;
     overflow: hidden;
@@ -628,10 +652,25 @@ body, html {
     opacity: 0;
     transition: all .6s ease .4s; */
   }
+  .phone{
+    color: #11a553;
+    font-weight: 500;
+  }
+  .whatsapp-text{
+    display: inline-block;
+    text-align: center;
+    padding: 9px 0;
+    margin-right: 10px;
+  }
+  .whatsapp{
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+  }
   .header h1 {
     margin: 0 0 10px 0;
     font-size: 1.5em;
-    font-weight: lighter;
+    font-weight: 500;
   }
   .header p {
     font-size: .9em;
@@ -666,15 +705,15 @@ body, html {
   }
   .form-style{
     width: 300px;
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
   }
   .form-group {
-    margin-bottom: 7px;
+    margin-bottom: 10px;
   }
   .form-control {
     display: block;
     width: 100%;
-    padding: 7px;
+    padding: 8px 10px 7px 10px;
     font-size: 13px;
     color: #495057;
     background-color: #fff;
@@ -922,7 +961,11 @@ button, input, optgroup, select, textarea {
     #navbar ul {display: none !important}
     .menuIcon {right: 40px;}
     .logo {margin: 0 25px 0 10px;}
-    
+    .msgr-container {
+      width: 95%;
+      z-index: 19;
+      height: 550px;
+    }
   }
   
   /* 
@@ -935,6 +978,19 @@ button, input, optgroup, select, textarea {
     #navbar ul {display: none !important}
     .menuIcon {right: 30px;}
     .logo {margin: 0 25px 0 10px;}
+    .msgr-container {
+      width: 95%;
+      z-index: 19;
+      height: 490px;
+      bottom: 70px;
+    }
+    .caption{
+      display: none;
+    }
+    .icon {
+      bottom: 12px;
+    }
+
     
   }
   @media (min-width: 1px) and (max-width: 320px) {
@@ -942,7 +998,57 @@ button, input, optgroup, select, textarea {
     #navbar ul {display: none !important}
     .menuIcon {right: 20px;}
     .logo {margin: 0 25px 0 10px;}
-    
+    .msgr-container {
+      width: 95%;
+      z-index: 19;
+      height: 400px;
+      bottom: 60px;
+    }
+    .icon {
+      bottom: 5px;
+    }
+    .card-nup {
+      width: 280px;
+    }
+    .form-style {
+      width: 260px;
+      margin: 15px auto 0 auto;
+    }
+    .caption{
+      display: none;
+    }
+    .header {
+      height: 75px;
+      padding: 10px 20px 0 20px;
+    }
+    .nup {
+      padding: 10px 0 5px 0;
+    }
+    .data {
+      padding: 0px 20px 10px 20px;
+    }
+    .form-group {
+      margin-bottom: 7px;
+    }
+    .form-control {
+      padding: 5px 10px 4px 10px;
+      font-size: 11px;
+    }
+    .btn {
+      padding: 3px 7px 4px 5px;
+      width: 75px;
+      font-size: 12px;
+    }
+    .p-whatsapp {
+      padding: 5px 30px 10px 10px !important;
+    }
+    .whatsapp-text {
+      padding: 7px 0;
+      font-size: 12px;
+    }
+    .w-35 {
+      width: 25px;
+    }
   }
 
 /*======================================================
